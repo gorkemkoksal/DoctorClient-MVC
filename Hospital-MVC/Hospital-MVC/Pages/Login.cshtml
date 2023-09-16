@@ -1,57 +1,37 @@
 ﻿@page
 @model Hospital_MVC.Pages.LoginModel
 
-<div class="text-center w-100">
 
-    <main class="form-signin">
+<div class="card my-4 mx-auto" style="width: 36rem;">
+	<img src="./Images/hospital.png" class="card-img-top mx-auto w-50 p-3" alt="hospital">
+	<div class="card-body">
 
-        <form>
+		<h5 class="card-title">Please Sign in</h5>
 
-            <img class="mb-4" src="bootstrap-logo.svg" alt="" width="72" height="57">
+		<div class="form-floating mb-3">
+			<input class="form-control" placeholder="name@example.com">
+			<label>Email address</label>
+		</div>
 
-            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+		<div class="form-floating mb-3">
+			<input class="form-control" placeholder="Password">
+			<label>Password</label>
+		</div>
 
-            <div class="form-floating mb-3">
+		<div class="checkbox my-1">
+			<label>
+				<input type="checkbox" /> Remember me
+			</label>
+		</div>
 
-                <input class="form-control" placeholder="name@example.com">
+		<div class="d-flex justify-content-center my-2">
+		<a href="#" class="btn btn-primary btn-lg mx-auto">Sign in</a>
+		</div>
+	
+		<div class="d-flex align-items-center justify-content-center">
+			<a href="Register" class="btn btn-secondary mx-2">Register</a>
+			<a href="Index" class="btn btn-secondary mx-2">Home</a>
+		</div>
 
-                <label>Email address</label>
-
-            </div>
-
-            <div class="form-floating mb-3">
-
-                <input class="form-control" placeholder="Password">
-
-                <label>Password</label>
-
-            </div>
-
-            <div class="checkbox mb-3">
-
-                <label>
-
-                    <input type="checkbox" /> Remember me
-
-                </label>
-
-            </div>
-
-
-            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-
-            <div class="mt-1">
-
-                <a href="Register" class="btn btn-primary btn-lg px-4">Register</a>
-
-                <a href="Index" class="btn btn-primary btn-lg px-4">Home</a>
-
-            </div>
-
-            <p class="mt-2 mb-3 text-muted">&copy; 2017–2021</p>
-
-        </form>
-
-    </main>
-
+	</div>
 </div>

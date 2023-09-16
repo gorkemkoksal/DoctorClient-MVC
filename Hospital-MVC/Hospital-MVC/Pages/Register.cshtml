@@ -2,3 +2,40 @@
 @model Hospital_MVC.Pages.RegisterModel
 @{
 }
+<div class="card my-4 mx-auto" style="width: 36rem;">
+	<img src="./Images/hospital.png" class="card-img-top mx-auto w-50 p-3" alt="hospital">
+	<div class="card-body">
+
+		<h5 class="card-title">Please Sign in</h5>
+
+		<div class="form-floating mb-3">
+			<input class="form-control" placeholder="name@example.com">
+			<label>Email address</label>
+		</div>
+
+		<div class="d-sm-flex align-items-center justify-content-between">
+			<div>
+				<div>
+					<input class="form-check-input" type="radio" checked>
+					<label class="form-check-label">
+						I am a Patient
+					</label>
+				</div>
+
+				<div class="mb-3">
+					<input class="form-check-input" type="radio">
+					<label class="form-check-label">
+						I am a Doctor
+					</label>
+				</div>
+			</div>
+			<img src="./images/patient-1295570_1280.png" class="w-25" />
+
+		</div>
+
+		<p class="mt-2 mb-3 text-muted">(password will be emailed)</p>
+
+		<a href="Register" class="btn btn-primary btn-lg w-100 m-1">Register</a>
+		<a href="Index" class="btn btn-secondary btn-lg w-100 m-1">Home</a>
+	</div>
+</div>

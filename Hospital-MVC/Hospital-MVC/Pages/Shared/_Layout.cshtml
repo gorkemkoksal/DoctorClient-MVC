@@ -11,31 +11,27 @@
 	@await RenderSectionAsync("CustomCSS",false)
 
 </head>
-<body>
+<body style="background-color:#FFCF9D">
 	<header>
-		<nav class="navbar navbar-expand-lg bg-light navbar-light">
+		<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#004225;">
 			<div class="container">
 				<a href="Index">
 					<img class="w-25" src="./Images/hospital-clinic-plus-logo-7916383C7A-seeklogo.com.png" alt="Hospital logo" />
 				</a>
-				<a href="Index" class="navbar-brand">MyHospital</a>
 			</div>
 		</nav>
 	</header>
 
+		@RenderBody()
 
-		<main role="main" class="pb-3">
-			@RenderBody()
-		</main>
+	<footer class="p-5 footer text-dark text-center position-relative" style="background-color:#FFCF9D">
 
-	<footer class="border-top footer text-muted">
-		<div class="container">
-			&copy; 2023 - Hospital_MVC - <a asp-area="" asp-page="/Privacy">Privacy</a>
-		</div>
+			<p class="lead">Copyright &copy; 2023 - Hospital_MVC - <a asp-area="" asp-page="/Privacy">Privacy</a></p>
 	</footer>
 
 	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 	@await RenderSectionAsync("CustomJS", required: false)
+
 </body>
 </html>
