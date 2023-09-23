@@ -1,37 +1,41 @@
 ﻿@page
 @model Hospital_MVC.Pages.LoginModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
+<form method="post">
+	<div class="card my-4 mx-auto" style="width: 36rem;">
+		<img src="./Images/hospital.png" class="card-img-top mx-auto w-50 p-3" alt="hospital">
+		<div class="card-body">
 
-<div class="card my-4 mx-auto" style="width: 36rem;">
-	<img src="./Images/hospital.png" class="card-img-top mx-auto w-50 p-3" alt="hospital">
-	<div class="card-body">
+			<h5 class="card-title">Please Sign in</h5>
 
-		<h5 class="card-title">Please Sign in</h5>
+			<div class="form-floating mb-3">
+				<input asp-for="Login.EmailID" class="form-control" placeholder="name@example.com">
+				<label asp-for="Login.EmailID">Email address</label>
+			</div>
 
-		<div class="form-floating mb-3">
-			<input class="form-control" placeholder="name@example.com">
-			<label>Email address</label>
+			<div class="form-floating mb-3">
+				<input asp-for="Login.Password" class="form-control" placeholder="Password">
+				<label asp-for="Login.Password">Password</label>
+			</div>
+
+			<div class="checkbox my-1">
+				<label>
+					<input asp-for="Login.RememberMe" type="checkbox" /> Remember me
+				</label>
+			</div>
+
+			<div asp-validation-summary="All" class="text-danger"></div>
+
+			<div class="d-flex justify-content-center my-2">
+				<button class="btn btn-primary btn-lg mx-auto" type="submit">Sign in</a>
+			</div>
+
+			<div class="d-flex align-items-center justify-content-center">
+				<a asp-page="Register" class="btn btn-secondary mx-2">Register</a>
+				<a asp-page="Index" class="btn btn-secondary mx-2">Home</a>
+			</div>
+
 		</div>
-
-		<div class="form-floating mb-3">
-			<input class="form-control" placeholder="Password">
-			<label>Password</label>
-		</div>
-
-		<div class="checkbox my-1">
-			<label>
-				<input type="checkbox" /> Remember me
-			</label>
-		</div>
-
-		<div class="d-flex justify-content-center my-2">
-		<a href="#" class="btn btn-primary btn-lg mx-auto">Sign in</a>
-		</div>
-	
-		<div class="d-flex align-items-center justify-content-center">
-			<a href="Register" class="btn btn-secondary mx-2">Register</a>
-			<a href="Index" class="btn btn-secondary mx-2">Home</a>
-		</div>
-
 	</div>
-</div>
+</form>
